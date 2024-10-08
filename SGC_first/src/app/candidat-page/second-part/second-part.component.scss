@@ -1,0 +1,19 @@
+// second-part.component.scss
+
+.section {
+  padding: 2em;
+  background-color: #F2F2F2;
+  margin-top: 2em;
+
+  &__title {
+ font-size: 1.5em;
+    margin-bottom: 1em;
+    border-left: red 3px solid;
+    padding-left: 0.5em;
+  }
+
+  &__content {
+    gap: 2em;
+    justify-content: space-around;
+  }
+}

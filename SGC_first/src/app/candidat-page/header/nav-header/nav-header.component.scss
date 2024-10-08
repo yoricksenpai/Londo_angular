@@ -1,0 +1,43 @@
+// nav-header.component.scss
+
+:host {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1em 0;
+  width: 100%;
+  &__home-icon {
+    padding: 1.35em;
+    border: solid 1px #E3E3E3;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__nav-item {
+    flex-grow: 1;
+    border: solid 1px #E3E3E3;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #F2F2F2;
+      font-weight: bold;
+    }
+
+    &-text {
+      margin: 0 4em;
+      padding: 1.35em 0;
+      color: #333333;
+      font-size: 0.9em;
+    }
+  }
+}

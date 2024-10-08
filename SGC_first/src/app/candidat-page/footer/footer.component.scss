@@ -1,0 +1,84 @@
+// footer.component.scss
+
+.sg-footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 15px 0;
+  margin-left: -2em;
+  margin-right: -2em;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .sg-logo {
+    img {
+      height: 30px;
+      // Ajustez la taille selon vos besoins
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .sg-sites-dropdown {
+    select {
+      background-color: #4a4a4a;
+      color: #ffffff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sg-footer {
+    &-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    ul {
+      flex-direction: column;
+      margin-top: 10px;
+
+      li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    .sg-sites-dropdown {
+      margin-top: 10px;
+    }
+  }
+}

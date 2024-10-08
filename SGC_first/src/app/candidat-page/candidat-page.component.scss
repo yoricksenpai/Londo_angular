@@ -1,0 +1,39 @@
+// candidat-page.component.scss
+
+:host {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__content {
+    flex: 1;
+  }
+
+  &__header,
+  &__footer {
+    flex-shrink: 0;
+  }
+}
+
+// Ajustements pour les composants enfants
+sgc-header,
+sgc-table-part,
+sgc-second-part,
+sgc-contact-part,
+sgc-footer {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

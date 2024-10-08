@@ -1,0 +1,36 @@
+// card-component.component.scss
+
+.container__card {
+  background-color: #FFFFFF;
+  padding: 1.5em;
+  margin: 1em;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  &__title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5em;
+  }
+
+  &__localisation {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 1em;
+    font-weight: 100;
+    font-size: 0.9em;
+    color: #666;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
