@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-
 @Component({
   selector: 'sgc-card-component',
   standalone: true,
@@ -11,4 +10,5 @@ export class CardComponentComponent {
   @Input() type: string = '';
   @Input() title: string = '';
   @Input() localization: string = '';
+
 }

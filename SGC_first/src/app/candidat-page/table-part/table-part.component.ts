@@ -7,6 +7,6 @@ import { TableComponent } from './table/table.component';
   templateUrl: './table-part.component.html',
   styleUrl: './table-part.component.scss'
 })
-export class TablePartComponent {
+export class TablePartComponent  {
 
 }
